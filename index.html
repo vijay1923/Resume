@@ -1,0 +1,914 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags for SEO and Browser Compatibility -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vijay Magadum - Embedded Systems Engineer specializing in IoT, ARM microcontrollers, ESP32, UART, MQTT, and communication protocols">
+  <meta name="keywords" content="embedded engineer, IoT, ESP32, ARM, UART, MQTT, embedded systems, microcontrollers, LPC2129">
+  <meta name="author" content="Vijay Magadum">
+  
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="Vijay Magadum | Embedded Engineer">
+  <meta property="og:description" content="Passionate embedded systems engineer specializing in IoT development with ESP32 and ARM microcontrollers">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijaymagadum.com">
+  
+  <!-- Favicon and Theme Color for Browser -->
+  <meta name="theme-color" content="#d4af37">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  
+  <!-- Page Title -->
+  <title>Vijay Magadum | Embedded Engineer</title>
+  
+  <!-- Performance Optimization - Preconnect to External Resources -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  
+  <!-- External Stylesheets and Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  
+  <!-- Structured Data for Search Engines (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vijay Magadum",
+    "jobTitle": "Embedded Engineer",
+    "description": "Embedded Systems Engineer specializing in IoT development",
+    "url": "https://vijaymagadum.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/vijay-magadum-686a65222/",
+      "https://github.com/vijay1923"
+    ],
+    "knowsAbout": ["Embedded Systems", "IoT", "ESP32", "ARM Microcontrollers", "MQTT", "UART"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading Screen - Shows while page loads -->
+  <div class="loading-screen" id="loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Theme Toggle Button - Fixed position for dark/light mode switching -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+
+  <!-- Main Navigation Bar - Fixed header with responsive menu -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <!-- Mobile Menu Toggle Button (Hamburger Menu) -->
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Navigation Menu Items -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero/Home Section - Main landing area with introduction -->
+  <header id="home" class="home-section">
+    <div class="home-container">
+      <div class="home-text">
+        <!-- Animated Introduction Text -->
+        <p class="intro-text animate-fade-in">HELLO!</p>
+        <h1 class="animate-fade-in-delay-1">I'm <span class="highlight">Vijay Magadum</span></h1>
+        
+        <!-- Typed.js Animation Container for Role -->
+        <p class="subtitle animate-fade-in-delay-2"><span id="typed-role"></span></p>
+        
+        <!-- Technology Stack Display -->
+        <p class="tech-stack animate-fade-in-delay-3">ESP32 • ARM7 • IoT • Embedded C • Linux Internals</p>
+        
+        <!-- Call-to-Action Buttons -->
+        <div class="hero-buttons animate-fade-in-delay-4">
+          <a href="#contact" class="btn">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+          <a href="https://www.linkedin.com/in/vijay-magadum-686a65222/" class="btn external-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+          <a href="https://github.com/vijay1923" class="btn external-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section - Personal information and skills -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- Profile Card with Avatar and Stats -->
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <div class="avatar-placeholder">VM</div>
+        </div>
+        <div class="profile-info">
+          <h3>Vijay Magadum</h3>
+          <p>Embedded Engineer</p>
+          <p>📍 Pune, Maharashtra, India</p>
+          
+          <!-- Animated Statistics -->
+          <div class="profile-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <!-- Note: Years experience data-target is empty -->
+              <span class="stat-number" data-target=" ">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- About Content with Skills -->
+      <div class="about-content">
+        <p>Hello! I'm a passionate embedded systems engineer with expertise in IoT development. I love building innovative projects with ESP32, ARM microcontrollers, and integrating them with modern IoT protocols like MQTT and Modbus.</p>
+        
+        <!-- Skills Grid with Progress Bars -->
+        <div class="skills-grid">
+          <!-- Programming Languages Skills -->
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">C</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">C++</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">Embedded C</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Microcontrollers Skills -->
+          <div class="skill-category">
+            <h4>Microcontrollers</h4>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">LPC2129</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span class="skill-name">ESP32</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Communication Protocols -->
+          <div class="skill-category">
+            <h4>Protocols</h4>
+            <div class="protocol-tags">
+              <span class="protocol-tag">UART</span>
+              <span class="protocol-tag">SPI</span>
+              <span class="protocol-tag">I2C</span>
+              <span class="protocol-tag">CAN</span>
+              <span class="protocol-tag">Modbus</span>
+              <span class="protocol-tag">MQTT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section - Professional experience and education -->
+  <section id="resume" class="fade-in">
+    <h2>Resume</h2>
+    
+    <!-- Resume Download Button -->
+    <div class="resume-download">
+      <a href="#" class="btn download-btn" id="download-resume">📄 Download Resume</a>
+    </div>
+
+    <!-- Professional Summary -->
+    <p class="resume-summary">
+      I am an enthusiastic Embedded Systems Engineer with strong expertise in IoT, 
+      microcontroller programming, and communication protocols like UART, I2C, and MQTT. 
+      I enjoy designing efficient embedded solutions, integrating hardware with software, 
+      and building real-time applications that bridge electronics with intelligent systems.
+    </p>
+
+    <!-- Work Experience Timeline -->
+    <h3 class="sub-heading">Experience</h3>
+    <div class="timeline">
+      <!-- First Job Experience -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="role">Embedded Trainee Engineer</h3>
+          <div class="meta">
+            <span class="company">XYZ</span> | 
+            <span class="duration">Jun 2025 - Dec 2025</span>
+          </div>
+          <p>
+            Worked on GSM-based automation systems. Developed firmware for remote
+            monitoring and control systems using ESP32 microcontrollers. Implemented
+            MQTT protocols for IoT communication.
+          </p>
+          <div class="achievements">
+            <ul>
+              <!-- Note: Placeholder content with formatting issue -->
+              <li>------------</li>
+              <li>------------</li>
+              <li>------------</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Job Experience -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="role">Embedded Intern</h3>
+          <div class="meta">
+            <span class="company">Vector India Bangalore</span> | 
+            <span class="duration">Aug 2024 - May 2025</span>
+          </div>
+          <p>
+            Worked on GSM-based automation systems. Developed firmware for remote
+            monitoring and control systems using ARM microcontrollers. Implemented
+            MQTT protocols for IoT communication.
+          </p>
+          <div class="achievements">
+            <ul>
+              <!-- Note: Placeholder content -->
+              <li>------------</li>
+              <li>------------</li>
+              <li>------------</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Timeline -->
+    <h3 class="sub-heading">Education</h3>
+    <div class="timeline">
+      <!-- Professional Certification -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Advanced Embedded Systems Certification</h3>
+          <div class="institute">Vector India, Bangalore</div>
+          <div class="duration"> Aug 2024 - Jun 2025</div>
+          <p>
+            Gained in-depth knowledge of <strong>C, C++, Python, ARM7 architecture, Linux Internals, RTOS, and Embedded C</strong>.  
+            Hands-on experience in developing firmware, working with microcontrollers, and implementing real-time communication protocols 
+            in projects.
+          </p>
+          <!-- Skills Tags -->
+          <div class="tech-tags">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ARM7</span>
+            <span class="tech-tag">Linux Internals</span>
+            <span class="tech-tag">RTOS</span>
+            <span class="tech-tag">Embedded C</span>
+            <span class="tech-tag">Communication Protocols</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bachelor's Degree -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>B.Tech in Electrical Engineering</h3>
+          <div class="institute">Shivaji University</div>
+          <div class="duration">2020 - 2024</div>
+          <p>
+            Built strong fundamentals in <strong>Electrical Machines, Power Systems</strong>.  
+            Gained analytical and problem-solving skills through academic projects and practical training.  
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Electrical Machines</span>
+            <span class="tech-tag">Power Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Certifications Section - Professional certifications and achievements -->
+<section id="certifications" class="fade-in">
+    <h2>Certifications</h2>
+    <div class="certifications-grid">
+        <!-- Primary Certification Card -->
+        <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <h3>Advanced Embedded Systems</h3>
+            <p class="cert-issuer">Vector India Pvt. Ltd.</p>
+            <p class="cert-date">Aug 2024 - May 2025</p>
+            <div class="cert-skills">
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">ARM</span>
+                <span class="skill-badge">LPC2129</span>
+                <span class="skill-badge">Linux</span>
+            </div>
+            <!-- Changed to proper link with target="_blank" -->
+            <a href="https://your-certificate-link.com/embedded-systems-cert.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="cert-verify-btn">
+               📋 Verify Certificate
+            </a>
+        </div>
+
+        <!-- Additional Achievement Card -->
+        <div class="cert-card achievement">
+            <div class="cert-icon">⚡</div>
+            <h3>Industrial Electrician Training</h3>
+            <p class="cert-issuer">Kolhapur Incubation Center</p>
+            <p class="cert-date">Jan 2022 - March 2022</p>
+            <div class="cert-skills">
+                <span class="skill-badge">Electrical Systems</span>
+                <span class="skill-badge">Industrial Wiring</span>
+            </div>
+            <!-- Changed to proper link with target="_blank" -->
+            <a href="https://your-certificate-link.com/electrician-cert.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="cert-verify-btn">
+               📋 Verify Certificate
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- Projects Section - Portfolio of completed projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    
+    <!-- Project Category Filter Buttons
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="embedded">Embedded</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+    </div> -->
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1: Calculator -->
+      <div class="project" data-category="embedded">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <span class="placeholder-icon">🧮</span>
+            <span class="placeholder-text">Calculator Project</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Basic Calculator using UART0</h3>
+          <p class="project-description">Implementation of a basic calculator system using UART communication protocol for embedded systems, enabling mathematical operations through serial communication.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">UART0</span>
+            <span class="tech-tag">Embedded C</span>
+            <span class="tech-tag">Serial Communication</span>
+            <span class="tech-tag">Microcontroller</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vijay1923/Implementation-of-Basic-Calculator-using-uart0-" class="project-link" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <span class="external-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: RFID System -->
+      <div class="project" data-category="embedded automation">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <span class="placeholder-icon">🏷️</span>
+            <span class="placeholder-text">RFID System</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>RFID-Based Employee Attendance System</h3>
+          <p class="project-description">Designed and implemented an RFID-based authentication system for employee attendance with real-time clock integration and data logging capabilities.</p>
+          
+          <!-- Detailed Project Information -->
+          <div class="project-details">
+            <ul>
+              <li>Configured and interfaced EM-18 RFID reader with LPC2129 microcontroller using UART protocol</li>
+              <li>Integrated RTC module (DS1307) using I2C communication for real-time date & time display</li>
+              <li>Developed Embedded C code for processing RFID tags and storing attendance logs</li>
+              <li>Implemented secure authentication system with employee database management</li>
+            </ul>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">LPC2129</span>
+            <span class="tech-tag">EM-18 RFID</span>
+            <span class="tech-tag">UART Protocol</span>
+            <span class="tech-tag">I2C Protocol</span>
+            <span class="tech-tag">RTC-DS1307</span>
+            <span class="tech-tag">Embedded C</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <span>GitHub</span>
+              <span class="external-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Smart Home Automation -->
+      <div class="project" data-category="iot automation">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <span class="placeholder-icon">🏠</span>
+            <span class="placeholder-text">Smart Home</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Smart Phone Based Home Automation</h3>
+          <p class="project-description">IoT-based home automation system controlled via smartphone application, enabling remote control of home appliances and monitoring capabilities.</p>
+          <div class="project-details">
+            <ul>
+              <li>Developed mobile application for controlling home appliances remotely</li>
+              <li>Implemented wireless communication between smartphone and embedded system</li>
+              <li>Integrated sensor monitoring and real-time status updates</li>
+              <li>Designed user-friendly interface for seamless device control</li>
+            </ul>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Mobile App</span>
+            <span class="tech-tag">Bluetooth</span>
+            <span class="tech-tag">Microcontroller</span>
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Embedded C</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vijay1923/Smart-Phone-Based-Home-Automation" class="project-link" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <span class="external-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Database System -->
+      <div class="project" data-category="embedded">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <span class="placeholder-icon">📊</span>
+            <span class="placeholder-text">Database System</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Student Database Management System</h3>
+          <p class="project-description">Comprehensive database management system for student records with CRUD operations, search functionality, and data organization capabilities.</p>
+          <div class="project-details">
+            <ul>
+              <li>Implemented complete CRUD (Create, Read, Update, Delete) operations</li>
+              <li>Developed search and filter functionality for efficient data retrieval</li>
+              <li>Designed user-friendly interface for database management</li>
+              <li>Integrated data validation and error handling mechanisms</li>
+            </ul>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Database Management</span>
+            <span class="tech-tag">CRUD Operations</span>
+            <span class="tech-tag">Data Structures</span>
+            <span class="tech-tag">File Handling</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vijay1923/Student-Data-Base-Management-System" class="project-link" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <span class="external-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section - Contact information and links -->
+  <section id="contact" class="fade-in">
+    <!-- Contact Header -->
+    <div class="contact-header-simple">
+      <h2>Contacts</h2>
+      <p>Below are the details to reach out to me!</p>
+    </div>
+
+    <!-- Contact Information Cards -->
+    <div class="contact-cards-container">
+      <!-- Location Card -->
+      <div class="contact-card-simple">
+        <div class="contact-icon-circle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </div>
+        <h3>ADDRESS</h3>
+        <p>Pune, India</p>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="contact-card-simple">
+        <div class="contact-icon-circle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 1 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 1 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <h3>CONTACT NUMBER</h3>
+        <p>+91 8767478007</p>
+      </div>
+
+      <!-- Email Card -->
+      <div class="contact-card-simple">
+  <div class="contact-icon-circle">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+         stroke="currentColor" stroke-width="2">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
+               c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+      <polyline points="22,6 12,13 2,6"/>
+    </svg>
+  </div>
+  <h3>EMAIL ADDRESS</h3>
+  <p>
+    <a href="mailto:vijaymagadum1923@gmail.com" class="email-btn">
+      vijaymagadum1923@gmail.com
+    </a>
+  </p>
+</div>
+
+
+
+      <!-- Resume Download Card -->
+      <!-- Resume Download Card -->
+<!-- Resume Download Card -->
+<div class="contact-card-simple">
+  <div class="contact-icon-circle">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+         stroke="currentColor" stroke-width="2">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12
+               a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14,2 14,8 20,8"/>
+      <line x1="16" y1="13" x2="8" y2="13"/>
+      <line x1="16" y1="17" x2="8" y2="17"/>
+      <polyline points="10,9 9,9 8,9"/>
+    </svg>
+  </div>
+  
+  <!-- Make heading itself clickable -->
+  <h3>
+    <a href="files/Vijay_Magadum_Resume.pdf" 
+       download="Vijay_Magadum_Resume.pdf" 
+       class="resume-link">
+       DOWNLOAD RESUME
+    </a>
+  </h3>
+</div>
+
+
+
+  <!-- Back to Top Button - Fixed position scroll-to-top functionality -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript Code - All interactive functionality -->
+  <script>
+    // ============================================
+    // TYPED.JS INITIALIZATION
+    // ============================================
+    // Initialize the typing animation for the hero role text
+    document.addEventListener('DOMContentLoaded', function() {
+      new Typed("#typed-role", {
+        strings: ["Embedded Engineer", "IoT Enthusiast"], // Text to cycle through
+        typeSpeed: 100,        // Speed of typing
+        backSpeed: 50,         // Speed of backspacing
+        backDelay: 1500,       // Delay before backspacing
+        loop: true             // Loop the animation infinitely
+      });
+    });
+
+    // ============================================
+    // LOADING SCREEN MANAGEMENT
+    // ============================================
+    // Hide loading screen once page fully loads
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.opacity = '0';                    // Fade out loading screen
+        setTimeout(() => loading.remove(), 500);        // Remove from DOM after fade
+      }
+      document.body.classList.add('loaded');            // Add loaded class for animations
+    });
+
+    // ============================================
+    // MOBILE NAVIGATION MENU
+    // ============================================
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    // Toggle mobile menu visibility
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');          // Animate hamburger icon
+      navMenu.classList.toggle('active');               // Show/hide menu
+    });
+
+    // ============================================
+    // SMOOTH SCROLLING NAVIGATION
+    // ============================================
+    // Handle smooth scrolling for all navigation links
+    document.querySelectorAll('.nav-link, .btn[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          
+          // Close mobile menu after navigation
+          navMenu.classList.remove('active');
+          mobileToggle.classList.remove('active');
+          
+          // Update active navigation link
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          if (link.classList.contains('nav-link')) {
+            link.classList.add('active');
+          }
+        }
+      });
+    });
+
+    // ============================================
+    // INTERSECTION OBSERVER FOR ANIMATIONS
+    // ============================================
+    // Set up intersection observer for scroll-based animations
+    const observerOptions = {
+      threshold: 0.1,                                   // Trigger when 10% of element is visible
+      rootMargin: '0px 0px -50px 0px'                  // 50px offset from bottom
+    };
+
+    // Create intersection observer to handle scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');        // Add visible class for CSS animations
+          
+          // Special handling for about section - trigger progress bars and counters
+          if (entry.target.id === 'about') {
+            animateProgressBars();
+            animateCounters();
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections with fade-in animation
+    document.querySelectorAll('.fade-in').forEach(section => observer.observe(section));
+
+    // ============================================
+    // PROGRESS BAR ANIMATIONS
+    // ============================================
+    // Animate skill progress bars when about section becomes visible
+    function animateProgressBars() {
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        const width = bar.getAttribute('data-width');   // Get target width from data attribute
+        bar.style.width = width + '%';                  // Animate to target width
+      });
+    }
+
+    // ============================================
+    // COUNTER ANIMATIONS
+    // ============================================
+    // Animate statistics counters with counting effect
+    function animateCounters() {
+      document.querySelectorAll('.stat-number').forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 2000;                          // 2 seconds duration
+        const step = target / (duration / 16);          // Calculate step size for 60fps
+        let current = 0;
+        
+        // Animation loop using requestAnimationFrame for smooth animation
+        const updateCounter = () => {
+          current += step;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;                // Ensure final value is exact
+          }
+        };
+        updateCounter();
+      });
+    }
+
+    // ============================================
+    // SCROLL-BASED NAVIGATION UPDATES
+    // ============================================
+    let ticking = false;                                 // Throttling flag for scroll events
+
+    // Update active navigation link based on current scroll position
+    function updateNav() {
+      let current = '';
+      const sections = document.querySelectorAll('section, header');
+      
+      // Find which section is currently in view
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) {    // 150px offset for header
+          current = section.id;
+        }
+      });
+      
+      // Update active class on navigation links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      });
+      
+      ticking = false;
+    }
+
+    // Throttled scroll event listener for performance
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateNav);
+        ticking = true;
+      }
+    });
+
+    // ============================================
+    // THEME TOGGLE FUNCTIONALITY
+    // ============================================
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';    // Default to dark theme
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    // Handle theme switching between light and dark modes
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);           // Save preference to localStorage
+      themeToggle.textContent = newTheme === 'dark' ? '🌓' : '☀️';  // Update button icon
+    });
+
+    // ============================================
+    // PROJECT FILTERING SYSTEM
+    // ============================================
+    // Handle project category filtering
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        
+        // Update active filter button
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Filter and animate project cards
+        document.querySelectorAll('.project').forEach(project => {
+          const categories = project.getAttribute('data-category').split(' ');
+          
+          if (filter === 'all' || categories.includes(filter)) {
+            // Show matching projects
+            project.style.display = 'block';
+            project.style.opacity = '1';
+            project.style.transform = 'scale(1)';
+          } else {
+            // Hide non-matching projects with animation
+            project.style.opacity = '0';
+            project.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              project.style.display = 'none';
+            }, 300);                                     // Wait for animation to complete
+          }
+        });
+      });
+    });
+
+    // ============================================
+    // CONTACT FORM HANDLING
+    // ============================================
+    // Handle contact form submission (if form exists)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('.btn-submit');
+        const btnText = btn.querySelector('.btn-text');
+        const btnLoading = btn.querySelector('.btn-loading');
+        
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        btn.disabled = true;
+        
+        // Simulate form submission (replace with actual form handling)
+        setTimeout(() => {
+          alert('Thank you for your message! I\'ll get back to you soon.');
+          e.target.reset();                              // Reset form fields
+          btnText.style.display = 'inline';
+          btnLoading.style.display = 'none';
+          btn.disabled = false;
+        }, 2000);
+      });
+    }
+
+    // ============================================
+    // BACK TO TOP BUTTON
+    // ============================================
+    const backToTop = document.getElementById('back-to-top');
+    
+    // Show/hide back-to-top button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {                   // Show after scrolling 300px
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    // Handle back-to-top button click
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+    });
+
+    // ============================================
+    // CERTIFICATE VERIFICATION HANDLERS
+    // ============================================
+    // Handle certificate verification button clicks (placeholder functionality)
+    document.querySelectorAll('.cert-verify-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Certificate verification feature coming soon!');
+      });
+    });
+
+    // ============================================
+    // RESUME DOWNLOAD HANDLER
+    // ============================================
+    // Handle resume download button click (placeholder functionality)
+    document.getElementById('download-resume').addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('Resume download feature will be implemented soon!');
+    });
+
+    // ============================================
+    // SCROLL-BASED ELEMENT ANIMATIONS
+    // ============================================
+    // Add scroll-based animations for timeline items, certificates, and projects
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.timeline-item, .cert-card, .project');
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        // Add animation class when element enters viewport
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('animate-in');
+        }
+      });
+    };
+
+    // Apply animations on scroll and on initial load
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Run once on page load
+  </script>
+</body>
+</html>
